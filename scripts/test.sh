@@ -25,4 +25,4 @@ PYTHONPATH=${PKG_DIR}:$PYTHONPATH CUDA_VISIBLE_DEVICES=1 python -u ${PKG_DIR}/mo
                   --vocab_file $vocab_file \
                   --max_sequence_length $max_sequence_length \
                   --batch_size $batch_size \
-                  --checkpoint_dir $latest_checkpoint # > log_test.txt 2>&1 &
+                  --checkpoint_dir $latest_checkpoint > log_test.txt 2>&1 &
