@@ -3,9 +3,9 @@ parentdir="$(dirname $cur_dir)"
 
 DATA_DIR=${parentdir}/data
 
-# latest_run=`ls -dt runs/* |head -n 1`
-# latest_checkpoint=${latest_run}/checkpoints
-latest_checkpoint=runs/1541064267/checkpoints
+latest_run=`ls -dt runs/* |head -n 1`
+latest_checkpoint=${latest_run}/checkpoints
+# latest_checkpoint=runs/1541064267/checkpoints  # or edit the path to the model requires testing here
 echo $latest_checkpoint
 
 test_premise_file=$DATA_DIR/word_sequence/premise_snli_1.0_test.txt
