@@ -46,4 +46,4 @@ PYTHONPATH=${PKG_DIR}:$PYTHONPATH CUDA_VISIBLE_DEVICES=1 python -u ${PKG_DIR}/mo
                 --dropout_keep_prob $dropout_keep_prob \
                 --batch_size $batch_size \
                 --rnn_size $rnn_size \
-                --evaluate_every $evaluate_every # > log.txt 2>&1 &
+                --evaluate_every $evaluate_every > log.txt 2>&1 &
